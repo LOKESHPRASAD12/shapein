@@ -117,13 +117,15 @@ body {
 }
 
 .button-align {
+    text-align: center;
     margin-top: 15px;
-    margin-left: 640px;
+    /*margin-left: 64px;*/
 }
 
 .subtitle-align {
     /* margin-top: 10px; */
-    margin-left: 535px;
+    /*margin-left: 220px;*/
+    text-align: center;
 }
 
 .subtitle {
