@@ -7,7 +7,8 @@
 
         body {
 
-            background-color: #05c46b;
+            
+            background: linear-gradient(115deg, rgba(252,150,191,1) 0%, rgba(45,253,231,1) 100%);
 
             font-family: Verdana;
 
@@ -29,6 +30,8 @@
             padding: 30px 20px;
 
             box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+                
+            border-radius: 12px;
 
         }
  
