@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Universal Public School | Powered By :: Candour Systems</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-137828520-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-137828520-1');
+</script>
+
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Universal Public School | Powered By :: Candour Systems" />
+<meta name="author" content="http://universalpublicschool.in/" />
+<!-- css -->
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet"> 
+<link href="css/flexslider.css" rel="stylesheet" /> 
+<link href="css/style.css" rel="stylesheet" />
+<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+<script language="JavaScript1.1">
+<!--
+
+/*
+JavaScript Image slideshow:
+By JavaScript Kit (www.javascriptkit.com)
+Over 200+ free JavaScript here!
+*/
+
+var slideimages=new Array()
+var slidelinks=new Array()
+function slideshowimages(){
+for (i=0;i<slideshowimages.arguments.length;i++){
+slideimages[i]=new Image()
+slideimages[i].src=slideshowimages.arguments[i]
+}
+}
+
+function slideshowlinks(){
+for (i=0;i<slideshowlinks.arguments.length;i++)
+slidelinks[i]=slideshowlinks.arguments[i]
+}
+
+function gotoshow(){
+if (!window.winslide||winslide.closed)
+winslide=window.open(slidelinks[whichlink])
+else
+winslide.location=slidelinks[whichlink]
+winslide.focus()
+}
+
+//-->
+</script>
+
+ 
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+<style>
+
+#rig {
+	max-width:700px;
+	margin:0 auto; /*center aligned*/
+	padding:0;
+	font-size:0; 
+	
+	/* Remember to change it back to normal font size if have captions */
+	list-style:none;
+	background-color:none;
+}
+#rig li {
+	display:inline-block;
+	*display:inline;/*for IE6 - IE7*/
+	width:25%;
+	vertical-align:middle;
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+}
+
+/* The wrapper for each item */
+.rig-cell {
+	margin:12px;
+	box-shadow:0 1px 4px rgba(0,0,0,0.4);
+	padding:5px;
+	border:none;
+	color:#555;
+	background-color:white;
+	text-decoration:none;
+	text-align:center;
+	display:block;
+	position: relative;
+	overflow:hidden;
+}
+
+.rig-cell h3 {
+	font-size:18px;
+	font-family:'Oswald', sans-serif;
+	font-weight:normal;
+}
+
+/* If have the image layer */
+.rig-img {
+	display:block;
+	border:none;
+	width:100%;
+	height:0;
+    padding-top:83.461538%;
+    background-size:cover;
+	
+	background-color:white;
+	
+    background-repeat:no-repeat;
+	position:relative; /* Make its pseudo :after to be relative to it. */
+}
+.rig-img:after{
+	position:absolute;
+	top:20px;right:20px;bottom:20px;left:20px;
+	border:1px solid #fff;
+	content:'+';
+	color:white;
+	padding-top:14%;
+	font-size:30px;
+	opacity:0;
+	filter:alpha(opacity=0);
+	transition:all 0.3s;
+	transform:scale(0);
+}
+
+#rig li:hover .rig-img:after {
+	opacity:1;
+	transform:scale(1);
+}
+
+/* If have the overlay layer */
+.rig-overlay {
+	position: absolute;
+	display:block;
+	top:0;left:0;bottom:0;right:0;
+	margin:auto;
+	background:white;
+	background-size:50px 50px;
+	opacity:0;
+	filter:alpha(opacity=0);/*For older IE*/
+	transition:all 0.3s;
+}
+#rig li:hover .rig-overlay {
+	opacity:0.5;
+}
+h5{
+	text-align:center;
+}
+
+@media (max-width: 9000px) {
+	#rig li {width:25%;}
+}
+
+@media (max-width: 800px) {
+	#rig li {width:33.33%;}
+}
+
+@media (max-width: 500px) {
+	#rig li {width:50%;}
+}
+
+@media (max-width: 350px) {
+	#rig li {width:100%;}
+}
+
+.sticky-container{
+    padding:0px;
+    margin:0px;
+    position:fixed;
+    right:-130px;
+    top:330px;
+    width:210px;
+    z-index: 1100;
+}
+.sticky li{
+    list-style-type:none;
+    background-color:#fff;
+    color:#efefef;
+    height:43px;
+    padding:0px;
+    margin:0px 0px 1px 0px;
+    -webkit-transition:all 0.25s ease-in-out;
+    -moz-transition:all 0.25s ease-in-out;
+    -o-transition:all 0.25s ease-in-out;
+    transition:all 0.25s ease-in-out;
+    cursor:pointer;
+}
+.sticky li:hover{
+    margin-left:-115px;
+}
+.sticky li img{
+    float:left;
+    margin:5px 4px;
+    margin-right:5px;
+}
+.sticky li p{
+    padding-top:5px;
+    margin:0px;
+    line-height:16px;
+    font-size:11px;
+}
+.sticky li p a{
+    text-decoration:none;
+    color:#2C3539;
+}
+.sticky li p a:hover{
+    text-decoration:underline;
+}
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 30px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-flickr {
+  background: #f40083;
+  color: white;
+}
+
+table{
+	color:#040;
+	text-shadow:#222;
+	font-weight:bold;
+}
+.div006 {
+    width: 100%;
+    height:20px;
+	background-color:#444;
+	color:#EEE;
+    
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #2da5c8;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 8px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+a{
+	color:#EEE;
+}
+.socialmedia{
+	 width: 600px;
+    height:50px;
+	padding:5px;
+	background-color:#BBB;
+	margin-left:100px;
+	
+}
+  
+
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+.blink_me2 {
+    animation: blinker 1s linear infinite; font-size:16px; color:#093;
+
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#myModal").modal('show');
+	});
+</script>
+</head>
+<body>
+	
+ <div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+           
+            <div class="modal-body">
+                  <!--<img src="img/omicron.jpg" class="img-responsive">-->
+                  <img src="img/popup.jpg" class="img-responsive">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="wrapper" class="home-page">
+<div class="topbar">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12"> 
+	   <a class="navbar-brand" href="index.html"><img src="img/4slogo.png" class="img-responsive" alt="logo" /></a>	  
+        
+      </div>
+	  
+    </div>
+  </div>
+</div>
+
+	<header>
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                   <a href="http://blog.universalpublicschool.in/" target="_blank" class="navbar-brand"><img src="img/british.jpg" alt="logo" width="100px" height="40px"/></a>
+                </div> 
+                <div class="navbar-collapse collapse ">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Home</a></li> 
+						 <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">About Us <b class="caret"></b></a>
+                       <ul class="dropdown-menu">
+						 <li><a href="about-us.html">About Us</a></li> 
+                             <li><a href="mission.html">Our Mission</a></li>
+                            <li><a href="vision.html">Our Vision</a></li>
+                            <li><a href="director.html">Director's Desk</a></li> 
+                             <li><a href="principal.html">Principal's Desk</a></li>
+                             <li><a href="mandatory-public-disclosure.html">Public Mandatory Disclosure</a></li>
+                        </ul>
+                    </li> 
+					<li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Campus <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="labs.html">Labs</a></li>
+							<li><a href="swiming.html">Swimming Pool</a></li>
+							<li><a href="counsling.html">Counselling</a></li>
+							<li><a href="medical-healthcare.html">Medical & Healthcare</a></li>
+							<li><a href="safty-security.html">Safety & Security</a></li>
+							<li><a href="transport.html">Transport</a></li>
+                           
+                        </ul>
+                    </li> 
+						<li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Academics <b class="caret"></b></a>
+                          <ul class="dropdown-menu">
+						 <li><a href="affiliation.html">Recognition & Affiliation</a></li>
+                           <li><a href="evaluation.html">Evaluation</a></li>
+							<li><a href="academics-I-V.html">I - V</a></li>
+                            <li><a href="academics-V-VIII.html">VI -  VIII</a></li>
+							<li><a href="academics-IX-X.html">IX - X</a></li>
+							<li><a href="academics-XI.html">XI</a></li>
+                            <li><a href="academics-XII.html">XII</a></li>
+                            <li><a href="online-fee-payment.html">Online Fee</a></li>
+                        </ul>
+                    </li> 
+                        <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">Admission <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                           
+							<li><a href="school-timing.html">School Timing</a></li>
+							<li><a href="school-uniform.html">School Uniform</a></li>
+							<li><a href="upload/TC_Requested_LIst_of_Student.pdf" target="_blank">Transfer Certificate</a></li>
+                        </ul>
+                    </li> 
+					<li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">School Life <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="competitive-exam-toppers.html">Achievements in Competitive Exams</a></li>
+        			     	<li><a href="co-curricular.html">Co-Curricular Achievements</a></li>
+							<li><a href="students-voice.html">Student Council</a></li>
+							<li><a href="results.html">Results</a></li>
+                           
+                        </ul>
+                    </li> 
+					<li><a href="gallery.html">Galley</a></li> 
+					<li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">UPS Updates <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="calendar.html">Holiday List</a></li>
+							<li><a href="activities.html">Activities</a></li>
+                           
+                        </ul>
+                    </li>
+					<li><a href="erp-login.html">ERP Login</a></li> 
+					<li><a href="online-fee-payment.html">Online Fee</a></li>
+<li class="dropdown">                        						<a href="#" data-toggle="dropdown" class="dropdown-toggle">ISA <b class="caret"></b></a>
+<ul class="dropdown-menu">						<li><a href="projects-isa.html">Projects ISA</a></li>
+						<li><a href="http://blog.universalpublicschool.in/">Blog</a></li>						</ul>						</li>
+
+                   <li><a href="contact.html">Contact Us</a></li>
+						
+                    </ul>
+					
+                </div>
+            </div>
+			
+        </div>
+	</header>
+	<!-- end header -->
+
+	<section id="banner">
+	 
+	<!-- Slider -->
+        <div id="main-slider" class="flexslider">
+            <ul class="slides">
+                 <li>
+                <img src="img/slides/sn6.jpg" class="img-responsive" alt="" />
+              </li>
+              <li>
+                <img src="img/slides/sn1.JPG" class="img-responsive" alt="" />
+              </li>
+              <li>
+                <img src="img/slides/sn2.JPG" class="img-responsive" alt="" />
+                
+              </li>
+			   <li>
+                <img src="img/slides/sn3.JPG" class="img-responsive" alt="" />
+                
+              </li>
+			   <li>
+                <img src="img/slides/sn4.JPG" class="img-responsive" alt="" />
+                
+              </li>
+			   <li>
+                <img src="img/slides/sn5.JPG" class="img-responsive" alt="" />
+              </li>
+			   <li>
+                <img src="img/slides/sn6.JPG" class="img-responsive" alt="" />
+                
+              </li>
+			 
+            </ul>
+        </div>
+	<!-- end slider -->
+ 
+	</section> 
+	<section id="call-to-action-3">
+	<div style="background-color:#25693a;" align="center">
+	    
+<marquee behavior="alternate" direction="left" scrollamount="2" onMouseOver="stop()" onMouseOut="start()">
+
+<img src="images/new.png" width="30" height="30">
+<a href="upload/Required-documents-Registration.pdf" target="_blank" style="color:#FFFFFF; font-size: 16px; font-weight: bold;">Required Documents at the time of Registration</a>   
+<img src="images/new.png" width="30" height="30">
+<a href="upload/2nd-List-Nursery-Admission.pdf" target="_blank" style="color:#FFFFFF; font-size: 16px; font-weight: bold;">2nd List of Nursery Admission 2022 - 2023</a>
+</marquee>
+
+</div>
+</section> 
+	
+<div class="about home-about">
+				<div class="container">
+						
+						<div class="row">
+							<div class="col-md-4">
+								<div class="block-heading-two">
+									<h3><span>Director's Desk</span></h3>
+								</div>	
+								     <div class="testimonials">
+										<div class="active item">
+										  <blockquote><p align="justify">Our vision is to sow the seed of the above mentioned true education in developing young children. With our deep desire, determination, sincere efforts we are confident that we will be able to create and provide such opportunity in UNIVERSAL PUBLIC SCHOOL, functioning under the guidance of UES.</p></blockquote>
+										  <div class="carousel-info">
+											<img alt="" src="img/team4.jpg" class="pull-left">
+											<div class="pull-left">
+											  <span class="testimonials-name">Ms. Maya Gupta</span>
+											  <span class="testimonials-post">Founder Director Principal</span>
+											</div>
+										  </div>
+										</div>
+									</div>
+							</div>
+							
+							<div class="col-md-4" align="center">
+								<div class="block-heading-two">
+									<h3><span>Welcome to UPS</span></h3>
+								</div>	
+							 <img src="img/UPS_ISO_CERTIFICATE_logo.jpg"><p align="justify">Education is essentially the process of transformation of an individual to enhance the ability to meet the expected or unexpected situations of life. It is the continuous process of learning. </p>
+								   
+							</div>
+						<div class="col-md-4 col-sm-3">
+				<h3><span style="font-size:22px;  color:#25693a;"><strong>Notice Board</strong></span></h3>
+					 <div style="background-color:#FEFFFB; border-radius: 5px; border:groove " >
+<div direction="up" scrolldelay="1" scrollamount="2" onMouseOver="stop()" onMouseOut="start()" style="height:234px; margin:10px 0 0 20px;">
+
+    <p> <img src="img/arrow.png"> <span style="color:#25693a; font-family:Geneva, Arial, Helvetica, sans-serif"><a href="upload/nur-reg2022-23.pdf" target="_blank" style="color:#25693a">List of Selected students scoring 45 Points for Nursery Admission Draw 2022-23</a></span></p>
+<hr> 
+
+    
+ <p> <img src="img/arrow.png"> <span style="color:#25693a; font-family:Geneva, Arial, Helvetica, sans-serif"><a href="upload/DocumentRequired-2022-23.pdf" target="_blank" style="color:#25693a">Required documents for Nursery Admission Session 2022-23</a></span></p>
+<hr> 
+
+ <p> <img src="img/arrow.png"> <span style="color:#25693a; font-family:Geneva, Arial, Helvetica, sans-serif"><a href="upload/registration-Admission-2022-23.pdf" target="_blank" style="color:#25693a">Schedule of Registration & Admission 2022-23</a></span></p>
+<hr>   
+ 
+<p><img src="img/arrow.png"><a href="http://www.facebook.com/schooluniversal" target="_blank"> <span style="color:#25693a; font-family:Geneva, Arial, Helvetica, sans-serif"> Visit & Like School Facebook Page </span></a> </p><hr>
+<p><img src="img/arrow.png"><a href="upload/Mobile_app_UPS.pdf" target="_blank"> <span style="color:#25693a; font-family:Geneva, Arial, Helvetica, sans-serif"> Mobile App User Mannual for Parents </span></a> </p><hr>
+<p><img src="img/arrow.png"><a href="upload/Mobile_app_key_points.pdf" target="_blank"> <span style="color:#25693a; font-family:Geneva, Arial, Helvetica, sans-serif"> Mobile App Key Points </span></a> </p><hr>
+<p><img src="img/arrow.png"><a href="http://www.youtube.com/c/UpsmediaClub" target="_blank"> <span style="color:#25693a; font-family:Geneva, Arial, Helvetica, sans-serif"> Visit & Like School Youtube Page </span></a> </p><hr>
+								
+</div>
+
+</div>
+</div>
+</div>
+<br>
+</div>
+						
+</div>
+					
+	<section id="call-to-action-2">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+								<div class="block-heading-two">
+									<h3><span style="font-size:22px; color:#25693a;">Achievement Corner</span></h3>
+								</div>		
+								 <img src="images/Achievement.gif" width="360" height="200" style="border-radius: 5px; border:groove ">
+								
+			  </div>
+				<div class="col-md-4 col-sm-3">
+				<h3><span style="font-size:22px; color:#25693a;"><strong>UPS News Silver Jublee</strong></span></h3>
+				
+                    <div class="embed-responsive embed-responsive-16by9">
+       <iframe width="360" height="200" src="https://www.youtube.com/embed/cytOqQP3ZtI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+			
+				</div>
+				
+				
+		<div class="col-md-4 col-sm-3">
+				<h3><span style="font-size:22px; color:#25693a;"><strong>Holistic Development</strong></span></h3>
+				
+                    <div class="embed-responsive embed-responsive-16by9">
+       <iframe width="360" height="200" src="https://www.youtube.com/embed/FppBGICGsNE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+			
+				</div>			
+			
+				
+		<!--<div class="col-md-4 col-sm-3">
+<h3><span style="font-size:22px; color:#25693a;">Events Gallery</span></h3> 
+<div style="border-radius: 5px; border:groove " >
+<a href="gallery.html"><img src="food1.jpg" name="slide" border=2 width=353 height=200></a>
+<script>
+<!--
+
+//configure the paths of the images, plus corresponding target links
+slideshowimages("img/p4.png","img/p1.jpg","img/p2.jpg","img/p3.jpg")
+
+//configure the speed of the slideshow, in miliseconds
+var slideshowspeed=1300
+
+var whichlink=0
+var whichimage=0
+function slideit(){
+if (!document.images)
+return
+document.images.slide.src=slideimages[whichimage].src
+whichlink=whichimage
+if (whichimage<slideimages.length-1)
+whichimage++
+else
+whichimage=0
+setTimeout("slideit()",slideshowspeed)
+}
+slideit()
+
+</script>
+</div>
+</div>-->		
+				
+				
+			</div>
+		</div>
+	</section>
+	
+
+	
+			<div style="padding:20px 0 20px 0">
+			<iframe src="client.html" frameborder="0"
+			style="border: 0px" width="100%" height="50px" scrolling="no"></iframe>
+			</div>		
+
+	<footer>
+	
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="copyright">
+						<p>
+							<span>&copy; Universal Public School 2018 All Right Reserved. Powered By </span><a href="http://www.candoursystems.com/" target="_blank">Candour Systems</a>
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<ul class="social-network"> <li><a href="https://www.facebook.com/UPS-Preet-Vihar-109147723879221" target="_blank" data-placement="top" title="Current"><img src="img/fb.png"></a></li>
+						<li><a href="https://www.facebook.com/schooluniversal" target="_blank" data-placement="top" title="Till 13 sep'19"><img src="img/fb.png"></a></li>
+                        <li><a href="http://www.youtube.com/c/UpsmediaClub" target="_blank" data-placement="top" title="Youtube"><img src="img/youtube.png"></a></li>
+					</ul>
+				</div>
+	</div>
+
+	</footer>
+</div>
+<a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
+
+<!-- javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.fancybox-media.js"></script>  
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/animate.js"></script>
+<!-- Vendor Scripts -->
+<script src="js/modernizr.custom.js"></script>
+<script src="js/jquery.isotope.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/animate.js"></script>
+<script src="js/custom.js"></script> 
+</body>
+</html>
