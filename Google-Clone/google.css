@@ -8,11 +8,11 @@ body {
 }
 
 .logo {
-    width: 17%;
+    width: 22%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 175px;
+    margin-top: 85px;
 }
 
 .apps {
@@ -80,7 +80,7 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 25px;
+    margin-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
     background: url(./Images/search-logo.jpg) no-repeat scroll 15px 12px;
@@ -126,6 +126,7 @@ body {
     /* margin-top: 10px; */
     /*margin-left: 220px;*/
     text-align: center;
+    margin-top: 12px;
 }
 
 .subtitle {
@@ -142,7 +143,7 @@ body {
 
 .subheading {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     color: #495057;
     padding: 0 0 20px 20px;
 }
@@ -151,7 +152,7 @@ footer {
     background-color: #F1F1F1;
     width: 100%;
     height: 47px;
-    margin-top: 222px;
+    margin-top: 213px;
     margin-left:0px;
     margin-right: 0px;
 }
@@ -182,4 +183,34 @@ footer {
 
 .footer-text-1:hover {
     text-decoration: underline;
+}
+
+.options{
+    width: 15px;
+}
+
+.top-part{
+    margin-top: 15px;
+    margin-right: 13px;
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    gap: 25px;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+.sign{
+    width: 85px;
+    height: 35px;
+    align-self: stretch;
+    background-color: #4d59c0;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+.indiv{
+    margin-top: 7.5px;
 }
