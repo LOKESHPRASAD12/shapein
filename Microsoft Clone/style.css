@@ -1,0 +1,119 @@
+*{
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+h2{
+    margin: 5%;
+    margin-top: 5%!important;
+}
+.navbar{
+   width: 90%;
+   margin: 0 auto;
+}
+.logostyle{
+   height: 40px;
+   
+}
+.fontcheck{
+    font-size: small;
+}
+.rightnav{
+    margin-left: 28rem;
+    padding: 0;
+}
+
+.carasouel{
+    height:30rem;
+   width: 100%;
+   margin-bottom: 0!important;
+
+}
+.carousel-item{
+ position: relative;
+  
+
+}
+.carousel-caption{
+    position: absolute;
+    top: 10%;
+ 
+    
+   
+}
+.carousel-caption h3{
+    text-align: left;
+    color: black;
+}
+.carousel-caption p{
+    color: black;
+    width: 18rem;
+    text-align: left;
+}
+.carousel-caption button{
+   position: absolute;
+   left: 2rem;
+  
+}
+main{
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.card
+{
+    
+   
+    border: none !important;
+}
+.cardbody{
+    padding: 0!important;
+}
+.msstyle{
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 90%;
+    height: 450px;
+    background-image: url('mainpic.jpg');
+    
+}
+.maincard{
+    position: relative;
+    top: 30%;
+    left: 10%;
+    
+}
+.maincardbody{
+   margin: 4%;
+ 
+}
+.last{
+    margin: 5%;
+}
+.socialsec
+{
+    margin: 5%;
+}
+.socialsec a{
+   color: black!important;
+   text-decoration: none!important;
+}
+footer{
+    background-color: #f2f2f2;
+    padding: 40PX 0PX;
+    padding-left: 5%;
+}
+footer li{
+    list-style: none;
+    line-height: 2;
+}
+footer a{
+    text-decoration: none;
+    color: #818181!important;
+    
+}
+
+.copyright{
+    margin-top: 5%!important;
+    line-height: 1;
+    color: #818181!important;
+}
+
