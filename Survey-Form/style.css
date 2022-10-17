@@ -1,125 +1,171 @@
+/* Styling the Body element i.e. Color,
+
+        Font, Alignment */
+
+body {
 
 
+    background: linear-gradient(0deg, rgb(56, 29, 92) 0%, rgb(12, 12, 12) 100%);
 
-        /* Styling the Body element i.e. Color, 
+    font-family: 'Poppins', sans-serif;
 
-        Font, Alignment */ 
+    text-align: center;
 
-        body {
+    color: #fff;
 
-            
-            background: linear-gradient(115deg, rgba(252,150,191,1) 0%, rgba(45,253,231,1) 100%);
+}
 
-            font-family: Verdana;
 
-            text-align: center;
+/* Styling the Form (Color, Padding, Shadow) */
 
-        }
- 
+form {
 
-        /* Styling the Form (Color, Padding, Shadow) */
+        /* background-color: rgb(56, 0, 124); */
+        background: linear-gradient(1deg, #17164f 0%, #38376f 50%, #403f9c 100%);
+        max-width: 500px;
+        margin: 50px auto;
+        padding: 30px 20px;
+        box-shadow: 2px 5px 10px rgb(0 0 0 / 50%);
+        border-radius: 10px;
 
-        form {
+}
 
-            background-color: #fff;
 
-            max-width: 500px;
+/* Styling form-control Class */
 
-            margin: 50px auto;
+.form-control {
 
-            padding: 30px 20px;
+    text-align: left;
 
-            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
-                
-            border-radius: 12px;
+    margin-bottom: 25px;
 
-        }
- 
+}
 
-        /* Styling form-control Class */
 
-        .form-control {
+/* Styling form-control Label */
 
-            text-align: left;
+.form-control label {
 
-            margin-bottom: 25px;
+    display: block;
 
-        }
- 
+    margin-bottom: 10px;
 
-        /* Styling form-control Label */ 
+}
 
-        .form-control label {
 
-            display: block;
-
-            margin-bottom: 10px;
-
-        }
- 
-
-        /* Styling form-control input, 
+/* Styling form-control input, 
 
         select, textarea */
 
-        .form-control input,
+.form-control input,
 
-        .form-control select,
+.form-control select,
 
-        .form-control textarea {
+.form-control textarea {
 
-            border: 1px solid #777;
+    border: 1px solid #777;
 
-            border-radius: 2px;
+    border-radius: 10px;
 
-            font-family: inherit;
+    font-family: inherit;
 
-            padding: 10px;
+    padding: 10px;
 
-            display: block;
+    display: block;
 
-            width: 95%;
+    width: 95%;
 
-        }
- 
+}
 
-        /* Styling form-control Radio 
+#comment {
+    border: 1px solid #777;
+    border-radius: 10px;
+    font-family: inherit;
+    padding-top: 7px;
+    padding-left: 11px;
+    margin: auto;
+    display: block;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 150px;
+}
+
+
+/* Styling form-control Radio 
 
         button and Checkbox */
 
-        .form-control input[type="radio"],
+.form-control input[type="radio"],
 
-        .form-control input[type="checkbox"] {
+.form-control input[type="checkbox"] {
 
-            display: inline-block;
+    display: inline-block;
 
-            width: auto;
+    width: auto;
 
-        }
- 
+}
 
-        /* Styling Button */
+/* Styling Button */
 
-        button {
+button {
 
-            background-color: #05c46b;
+    background-color: #16169f;
 
-            border: 1px solid #777;
+    border: none;
 
-            border-radius: 2px;
+    border-radius: 10px;
 
-            font-family: inherit;
+    font-family: inherit;
 
-            font-size: 21px;
+    font-size: 20px;
 
-            display: block;
+    display: block;
 
-            width: 100%;
+    width: 30%;
 
-            margin-top: 50px;
+    text-align: center;
 
-            margin-bottom: 20px;
+    margin: auto;
 
-        }
+    margin-top: 20px;
 
-    
+    padding-top: 5px;
+
+    padding-bottom: 5px;
+
+    color: white;
+
+}
+
+button:hover {
+
+    background-color: #3535c3;
+
+    border: none;
+
+    border-radius: 10px;
+
+    font-family: inherit;
+
+    font-size: 20px;
+
+    display: block;
+
+    width: 30%;
+
+    text-align: center;
+
+    margin: auto;
+
+    margin-top: 20px;
+
+    padding-top: 5px;
+
+    padding-bottom: 5px;
+
+    color: white;
+
+    transition: all 0.1s ease-in;
+
+    cursor: pointer;
+}
