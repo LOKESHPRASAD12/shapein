@@ -1,0 +1,27 @@
+*{
+ margin:0px;
+ padding:0px;
+}
+
+  body {
+ background-image:url(databackground.jpg);
+ background-size:cover; 
+ background-attachment:fixed;
+ font-family:arial; 
+}
+
+h1{
+
+ color:white; 
+}
+
+
+
+
+
+/*  .btn-info {
+ margin-top : 20px;
+ font-size : 21px;
+ width : 100px; 
+ background : transparent; 
+}*/

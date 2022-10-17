@@ -1,0 +1,42 @@
+*{
+ margin : 0px ;
+ padding : 0px ;
+}
+
+  body {
+ background-image :url(btn.jpg) ;
+ background-size : cover ; 
+ background-attachment : fixed;
+ font-family : arial ; 
+}
+
+h1{
+ font-size : 50px; 
+ color : white ; 
+}
+
+img{
+ width : 130px ; 
+ height : 130px ;
+ border-radius : 100px ; 
+ margin-left : 160px ; 
+ transition : 1s ; 
+}
+
+img:hover{ 
+     -webkit-transform : scale(1.8);
+}
+
+.form-control {
+ background : transparent ;
+ border-radius : 0px ;
+ border:0px ;
+ border-bottom :2px solid lightgreen ;
+ font-size :21px ;
+ margin-top :18px ;
+ padding : 23px; 
+ color : white ;
+ }
+
+
+
