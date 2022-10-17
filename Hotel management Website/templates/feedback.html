@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Hotel Management</title>
+
+<style type="text/css">
+  
+.form-control {
+
+ border-radius : 5px ;
+ /*border:10px ;*/
+ font-size :21px ;
+ margin-top :18px ;
+ padding : 13px; 
+ align-items: center;
+
+ }
+
+body{
+  background-color: aqua;
+}
+
+
+ .heading{
+         color: red;
+         font-family: algerian;
+         background-color: black;
+         font-style: italic;
+         text-align: center;
+     
+      }
+
+</style>
+
+
+  </head>
+  <body>
+     <div class="heading">
+     <h1>Hotel Management</h1> 
+</div>
+<br>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+
+{% with  messages = get_flashed_messages() %}
+              {% if messages %}
+                <ul class=flashes>
+                  {%for message in messages%}
+                  <li class="alert alert-warning alert-dismissible fade show" role="alert"> {{message}} 
+
+                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                     </button>
+
+                  </li>
+                  {%endfor%}
+                </ul>
+
+                
+
+             {% endif %}
+              {% endwith %}
+
+
+<ul class="nav justify-content-end">
+  <li class="nav-item" style="margin-right: 20px;">
+    
+    <a class="nav-link " href="/" tabindex="-1" aria-disabled="true"><button type="button" class="btn btn-primary">Home</button></a>
+  </li>
+</ul>
+
+    <div style="text-align: center;">
+     <h1>Feedback</h1> 
+</div>
+
+<br>
+<center><img src="{{url_for('static', filename='feedbackus.png')}}" width="250px" height="250px;"></center><br>
+<div class="container"> 
+<div class="row"> 
+
+<div class="col-md-3">
+
+ </div> 
+
+<div class="col-md-6">
+
+<form action="/feedback_us" method="post">
+  <input type="text" class="form-control" name="name" placeholder="Enter your Name"  required /> 
+  <input type="text" class="form-control" name="contactno" placeholder="Enter your Contact number"  required />
+  <textarea id="text" name="msg" rows="3" cols="74" required class="form-control" placeholder="Write feedback"></textarea> <br>
+  <input type="submit" class="btn btn-info btn-block" value="Submit" />
+</form>
+</div> 
+ <div class="col-md-3"> </div>
+ </div >
+
+
+<br><br><br>
+
+
+
+
+  </body>
+</html>

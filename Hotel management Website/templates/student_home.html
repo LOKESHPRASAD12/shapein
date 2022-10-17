@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Hostel Searching</title>
+    <style type="text/css">
+      
+       body { margin : 10 ;
+     padding : 0 ; 
+     background : linear-gradient(to left,#8942a8,#bd38);     
+     height:100vh;
+     } 
+     
+     .form{
+     position : absolute ;
+     width : 60px ;
+     height : 60px ; 
+     left : 50% ; 
+     top : 20% ; 
+     padding : 5px ; 
+     transform : translate(-50% , -50%) ; 
+     border-radius : 50px; 
+     border : 4px solid #fff ; 
+     box-sizing : border-box ; 
+     background : #fff ; 
+     transition : 1.5s ;
+     }
+     
+     .input 
+     {
+     position : absolute ; 
+     top : 0 ; 
+     left : 0 ;
+     border : 0 ; 
+     width : 100% ; 
+     height : 52px ; 
+     line-height : 75px ; 
+     outline : 0 ;
+     display : none ;
+     font-size : 16px ;
+     border-radius : 25px ; 
+     padding : 0 20px ; 
+     font-family :arial;
+     }
+     
+     i.fa { 
+     position : absolute ;
+     top : 0 ; 
+     right : 0 ;
+     width : 52px ; 
+     height : 52px ; 
+     box-sizing : border-box ; 
+     border-radius : 50% ; 
+     text-align : center ; 
+     font-size : 25px ;
+     transition : 1.5s ;
+     color : tomato ;
+     background : #262626 ; 
+     padding : 15px ;
+      } 
+      
+       .form:hover
+       {
+        width : 400px ; 
+        cursor : pointer ; 
+        } 
+        .form:hover input 
+        {
+        display : block ;
+        }
+     
+
+
+        .heading{
+    		color: red;
+         font-family: algerian;
+         background-color: black;
+         font-style: italic;
+         animation-name: sample;
+         animation-duration: 2s;
+         animation-direction: alternate;
+         animation-iteration-count: infinite;
+         animation-timing-function: linear;
+    	}
+
+
+      @keyframes sample{
+        0% {color: red;}
+        25% {color:aqua;}
+        50%{color: white;}
+        100%{color: red;}
+      }
+
+
+
+
+
+#searchbar{ 
+     margin-left: 15%; 
+     padding:15px; 
+     border-radius: 10px; 
+   } 
+ 
+   .input[type=text] { 
+      width: 70%; 
+      -webkit-transition: width 0.15s ease-in-out; 
+      transition: width 0.15s ease-in-out; 
+   } 
+ 
+   /* When the input field gets focus, 
+        change its width to 100% */
+   .input[type=text]:focus { 
+     width: 70%; 
+   } 
+ 
+  #list{ 
+    font-size:  1.5em; 
+    margin-left: 90px; 
+   } 
+ 
+.animals{ 
+   display: list-item;     
+  }  
+
+
+
+      
+    </style>
+    
+<script type="text/javascript">
+    
+    function search_hostel() { 
+    let input = document.getElementById('searchbar').value 
+    input=input.toLowerCase(); 
+    let x = document.getElementsByClassName('animals'); 
+      
+    for (i = 0; i < x.length; i++) {  
+        if (!x[i].innerHTML.toLowerCase().includes(input)) { 
+            x[i].style.display="none"; 
+        } 
+        else { 
+            x[i].style.display="list-item";                  
+        } 
+    } 
+} 
+
+</script>
+
+
+
+
+
+
+    <title>Hotel Management</title>
+  </head>
+  <body>
+    <div class='heading'>
+      <marquee behavior="alternate" direction="left" scrollamount="15">
+        <h1 >Hotel Management</h1>
+      </marquee> 
+   </div>
+   
+
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+<ul class="nav justify-content-end">
+   <li class="nav-item">
+    
+    <a class="nav-link " href="/" tabindex="-1" aria-disabled="true"><button type="button" class="btn btn-primary">Home</button></a>
+  </li>
+
+  <li class="nav-item" style="margin-right: 20px;">
+    
+    <a class="nav-link " href="/logout_student" tabindex="-1" aria-disabled="true"><button type="button" class="btn btn-primary">Logout</button></a>
+  </li>
+</ul>
+
+
+<form action="/" class="form" style="margin-top: 50px;">
+ <input id="searchbar" onkeyup="search_hostel()" type="text"
+        name="search" placeholder="Search with City or Hostel name ...  " class="input " > 
+        <i class="fa fa-search"> </i>
+</form>
+
+<br><br><br><br><br><br>
+{%for j,i in enumerate(result)%}
+
+<form action="/search_hostels/{{i[5]}}" method="post" style="margin-right: 40px;" >
+
+<ol style="list-style: none;">
+
+
+ <li class="animals">
+
+  <div>
+<div class="card text-white bg-info mb-3" style="max-width: 100%;border:3px solid grey; border-radius: 15px;" >
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src='static/uploading/{{j+num}}.jpg' class="card-img" alt="..." height="200px" style="border-radius: 15px;">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+
+        <h3 class="card-title" style="font-family: arial; font-weight: bold; font-style: italic;">
+          <button class="btn info" style="color: blue; font-size: 30px; font-style: italic; font-weight: bold;">{{i[5]}}</button>
+        </h3>
+
+        <a href="search_hostels/i{{5}}"></a>
+        <p class="card-text" style="font-family: arial; font-weight: bold;"><u>Location</u>  :{{i[13]}} , {{i[14]}} <br> {{i[15]}}, {{i[17]}}, {{i[16]}}</p>
+
+        <p class="card-text"style="color: black;"><small class="text-muted" >Email : {{i[9]}}</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<hr>
+</li>
+
+</ol>
+</form>
+{%endfor%} 
+  </body>
+</html>
