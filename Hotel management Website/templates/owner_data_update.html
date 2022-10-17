@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	   <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+   <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style25.css')}}">
+   <link rel="stylesheet" type="text/css" href="style2.css'">
+   <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+	<title>Hotel Management</title>
+
+<style type="text/css">
+  .col-md-4{
+  color: white;
+  
+}
+
+
+
+ h4{
+        color:red;
+         font-family: times new roman;
+         font-style: italic;
+ }
+       
+
+
+.container
+{
+  transform: translate(-50%,-50%);
+  position: absolute;
+
+}
+.file-upload{
+  font-size: 15px;
+  background:gray;
+  border-radius: 50px;
+  box-shadow: 5px 5px 10px black;
+  width: 350px;
+  outline: none;
+}
+
+
+::-webkit-file-upload-button {
+ color : white ;
+ background : #206a5d ; 
+ padding : 15px ; 
+ border : none ;
+  border-radius : 50px ; 
+  box-shadow : 1px 1px 1px #6b4559 ; 
+  outline : none ; 
+}
+
+
+:: -webkit-file-upload-button : hover
+{
+ background : +438 ;
+}
+
+
+
+ .heading{
+         color: red;
+         font-family: algerian;
+         background-color: black;
+         font-style: italic;
+         text-align: center;
+     
+      }
+      
+ 
+.btn-info {
+margin-top : 20px;
+ font-size : 21px;
+ width : 1000px; 
+background : transparent; 
+}
+
+.form-control {
+background : transparent ;
+border-radius : 5px ;
+font-size :20px ; 
+color : white ;
+
+ }
+
+</style>
+
+
+</head>
+<body >
+
+  
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+     <h1 class='heading'>Hotel Management</h1>
+
+<form method="post" action="/owner_login_with_update_success"  enctype="multipart/form-data">
+
+
+
+
+<div class="file-upload-wrapper">
+<center>
+<h4> Image1 </h4>
+  <input type="file" id="image1" name="image1" class="file-upload" required />
+
+  </center>
+</div>
+
+
+
+<div class="file-upload-wrapper">
+<center>
+<h4> Image2</h4>
+  <input type="file" id="image2" name="image2" class="file-upload" required />
+
+  </center>
+</div>
+
+
+<div class="file-upload-wrapper">
+<center>
+<h4> Image3 </h4>
+  <input type="file" id="image3" name="image3" class="file-upload" required/>
+
+  </center>
+</div>
+
+<div class="file-upload-wrapper">
+<center>
+<h4> Image4 </h4>
+  <input type="file" id="image4" name="image4" class="file-upload" required/>
+
+  </center>
+</div>
+
+<br>
+
+
+
+
+
+
+<div class="table-responsive">
+<table class="table">
+  <tbody>
+  
+    <tr >
+  
+       <td style="font-size: 23px;"> 
+          <span class = "label label-primary">Hotel Type :</span>
+        </td>
+
+        <td>
+          <input type="text" aria-label="First name" id="hosteltype" name="hosteltype" placeholder="Ex : Boys/Girls" class="form-control" required="true" value='{{hostel_type}}' type="text"/>
+        </td>
+
+        <td style="font-size: 23px;"> 
+          <span class = "label label-primary">Room charge :</span>
+        </td>
+
+        <td>
+          <input type="text" aria-label="First name" id="fees" name="fees" placeholder="Ex : 5000(Included food)" class="form-control" required="true" value='{{fees}}' type="text"/>
+        </td>
+    
+    </tr>
+
+
+    
+    <tr>
+     
+     <td style="font-size: 23px;"> 
+  <span class = "label label-primary">Hotel Name :</span>
+  </td>
+  
+   <td>
+  <input type="text" aria-label="First name" id="hostelname" name="hostelname" placeholder="Ex: Radission Hotel" class="form-control" required="true" value='{{hostel_name}}' type="text"/>
+  </td>
+
+
+     <td style="font-size: 23px;"> 
+  <span class = "label label-primary">Address :</span>
+  </td>
+
+  <td>
+  <input type="text" aria-label="First name" id="address" name="address" placeholder="Near Ranjeet hanuman" class="form-control" required="true" value='{{address}}' type="text"/>
+  </td>
+    </tr>
+
+
+
+      <tr>
+          <td style="font-size: 23px;"> 
+  <span class = "label label-primary">Owner Name :</span>
+  </td>
+
+  <td>
+  <input type="text" aria-label="First name"id="ownername" name="ownername" placeholder="Ex : Raj kumar" class="form-control" required="true" value='{{owner_name}}' type="text"/>
+  </td>
+
+        <td style="font-size: 23px;"> 
+  <span class = "label label-primary">Landmark :</span>
+  </td>
+
+  <td>
+  <input type="text" aria-label="First name" id="landmark" name="landmark" placeholder="Ex : David nagar" class="form-control" required="true" value='{{landmark}}' type="text"/>
+</td>
+    
+    </tr>
+
+
+     <td style="font-size: 23px;"> 
+  <span class = "label label-primary">Total Rooms :</span>
+  </td>
+  <td>
+  <input type="text" aria-label="First name" id="totalrooms" name="totalrooms" placeholder="Ex : 50" class="form-control" required="true" value='{{total_rooms}}' type="text"/>
+  </td>
+
+  <td style="font-size: 23px;"> 
+  <span class = "label label-primary">City :</span>
+  </td>
+
+  <td>
+  <input type="text" aria-label="First name" id="city" name="city" placeholder="Ex : Indore" class="form-control" required="true" value='{{city}}' type="text"/>
+</td>
+    
+    </tr>
+
+
+    <tr>
+          <td style="font-size: 23px;"> 
+  <span class = "label label-primary">Available Rooms :</span>
+  </td>
+
+  <td>
+  <input type="text" aria-label="First name" id="availablerooms" name="availablerooms" placeholder="Ex : 20" class="form-control" required="true" value='{{available_rooms}}' type="text"/>
+  </td>
+
+
+  <td style="font-size: 23px;"> 
+  <span class = "label label-primary">Pincode :</span>
+  </td>
+
+  <td>
+  <input type="text" aria-label="First name" id="pincode" name="pincode" placeholder="Ex : 452001" class="form-control" required="true" value='{{pincode}}' type="text"/>
+  </td>  
+  </tr>
+
+
+    <tr>
+  
+  <td style="font-size: 23px;"> 
+  <span class = "label label-primary">Email :</span>
+  </td>
+
+  <td>
+  <input type="email" aria-label="First name" id="email" name="email" placeholder="Ex : abcd@gmail.com" class="form-control" required="true" value='{{email}}' type="text"/>
+  </td>
+
+  <td style="font-size: 23px;"> 
+  <span class = "label label-primary">State :</span>
+  </td>
+
+  <td>
+  <input type="text" aria-label="First name" id="state" name="state" placeholder="Ex : Madhya Pradesh" class="form-control" required="true" value='{{state}}' type="text"/>
+  </td>
+    
+    </tr>
+
+
+
+
+
+    <tr>
+         <td style="font-size: 23px;"> 
+  <span class = "label label-primary">Contact no. :</span>
+  </td>
+
+  <td>
+  <input type="text" aria-label="First name" id="contactno" name="contactno" placeholder="Ex : 9447765489" class="form-control" required="true" value='{{contact_no}}' type="text"/>
+  </td>
+
+
+         <td style="font-size: 23px;"> 
+  <span class = "label label-primary">Country :</span>
+  </td>
+
+  <td>
+  <input type="text" aria-label="First name" id="country" name="country" placeholder="Ex : India" class="form-control" required="true" value='{{country}}' type="text"/>
+  </td>
+    
+    </tr>
+
+
+
+
+    <tr>
+          <td style="font-size: 23px;"> 
+  <span class = "label label-primary">Alternate no. :</span>
+  </td>
+
+  <td>
+  <input type="text" aria-label="First name" id="alternateno" name="alternateno" placeholder="Ex : 9856235468" class="form-control" required="true" value='{{alternate_no}}' type="text"/>
+  </td>
+
+          <td style="font-size: 23px;"> 
+  <span class = "label label-primary">Coler/<br>Air Conditioner/<br>Refrigerator :</span>
+  </td>
+   
+   <td>
+  <input type="text" aria-label="First name" id="car" name="car" placeholder="Ex : Cooler and Refrigerator" class="form-control" required="true" value='{{car}}' type="text"/>
+</td>
+    
+    </tr>
+
+<tr>
+<td colspan ="4" >
+<input type="submit" class="btn btn-info btn-lg btn-block" value="Submit" />
+
+</td>
+</tr>
+
+  </tbody>
+
+</table>
+</div>
+
+
+
+
+
+</form>
+</body>
+</html>

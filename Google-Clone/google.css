@@ -3,16 +3,16 @@ html {
 }
 
 body {
-    margin:0px;
-    padding:0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .logo {
-    width: 17%;
+    width: 25%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 175px;
+    margin-top: 60px;
 }
 
 .apps {
@@ -47,7 +47,7 @@ body {
 }
 
 
-.links{
+.links {
     float: right;
     color: #000000;
     text-align: center;
@@ -80,19 +80,20 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 25px;
+    margin-top: 20px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
-    background: url(./Images/search-logo.jpg) no-repeat scroll 15px 12px;
+    background: url("https://icon-library.com/images/facebook-magnifying-glass-icon/facebook-magnifying-glass-icon-22.jpg") no-repeat scroll 15px 12px;
     background-size: 21px;
     padding-left: 50px;
 }
 
 .search-bar:hover {
     height: 42px;
-    width: 502px; 
+    width: 502px;
     box-shadow: 1px 2px 10px #dfdfdf;
     outline: none;
+    transition: all 0.1s ease-in;
 }
 
 .button1 {
@@ -126,12 +127,13 @@ body {
     /* margin-top: 10px; */
     /*margin-left: 220px;*/
     text-align: center;
+    margin-top: 12px;
 }
 
 .subtitle {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
-    padding: 0 0 0px 3px;
+    padding: 0 0 0px 7px;
     color: #1a2cc7;
     text-decoration: none;
 }
@@ -142,7 +144,7 @@ body {
 
 .subheading {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     color: #495057;
     padding: 0 0 20px 20px;
 }
@@ -151,8 +153,8 @@ footer {
     background-color: #F1F1F1;
     width: 100%;
     height: 47px;
-    margin-top: 222px;
-    margin-left:0px;
+    margin-top: 213px;
+    margin-left: 0px;
     margin-right: 0px;
 }
 
@@ -182,4 +184,56 @@ footer {
 
 .footer-text-1:hover {
     text-decoration: underline;
+}
+
+.options {
+    width: 15px;
+}
+
+.top-part {
+    margin-top: 15px;
+    margin-right: 13px;
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+    gap: 25px;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+.sign {
+    width: 96px;
+    height: 35px;
+    align-self: stretch;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+.sign:hover {
+    width: 96px;
+    height: 35px;
+    align-self: stretch;
+    background-color: #2268c3;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.indiv {
+    margin-top: 7.5px;
+}
+
+.top-part .indiv a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.top-part .indiv a:hover {
+    text-decoration: underline;
+    color: #000000;
 }

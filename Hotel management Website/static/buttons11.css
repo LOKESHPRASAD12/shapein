@@ -1,0 +1,7 @@
+
+body{
+  background-image: url(hotelbackground.jpg);
+  background-size: cover ;
+  background-attachment: fixed;
+  font-family: arial;
+}

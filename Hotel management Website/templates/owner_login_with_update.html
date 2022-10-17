@@ -1,0 +1,107 @@
+<html>
+ <head> 
+
+ 	 <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='style55.css')}}">
+
+    <style type="text/css">
+         .btn-info {
+margin-top : 20px;
+ font-size : 21px;
+ width : 510px; 
+background : transparent; 
+}
+
+.col-md-6{
+ box-shadow : -1px 1px 60px 10px black ;
+ border-radius : 0px 100px 0px 100px ; 
+margin-top : 60px;
+height : 560px ;
+ background : rgba( 0,0,0,0.4 ) ;
+}
+
+    </style>
+
+
+
+
+<title>Hotel Management</title>
+ </head> 
+<body>
+  <ul class="nav justify-content-end">
+ <li class="nav-item" style="margin-right: 20px;">
+    
+    <a class="nav-link " href="/" tabindex="-1" aria-disabled="true"><button type="button" class="btn btn-primary">Home</button></a>
+  </li>
+
+    
+<li class="nav-item">
+    
+    <a class="nav-link " href="/button" tabindex="-1" aria-disabled="true"><button type="button" class="btn btn-primary">Dashboard</button></a>
+  </li>
+
+ 
+</ul>
+
+	 <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+ {% with  messages = get_flashed_messages() %}
+              {% if messages %}
+                <ul class=flashes>
+                  {%for message in messages%}
+                  <li class="alert alert-warning alert-dismissible fade show" role="alert"> {{message}} 
+
+                     <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                     </button>
+
+                  </li>
+                  {%endfor%}
+                </ul>
+
+                
+
+             {% endif %}
+              {% endwith %}
+
+ <div class="container"> 
+<div class="row"> 
+
+<div class="col-md-3">
+
+ </div> 
+
+<div class="col-md-6">
+
+
+
+
+ <h1 class="text-center"> Update Data </h1>
+
+
+<img src="{{url_for('static', filename='hl.jpg')}}"><br>
+<form method="post" action="/owner_data_update_validation">
+<input type="email" class="form-control" name="email1" placeholder="Enter your E-mail address"/> <br>
+<input type="email" class="form-control" name="hostel_email" placeholder= "Enter your hotel E-mail address"/></br>
+<input type="password" class="form-control" name="password1" placeholder= "Password"/>
+
+ <input type="submit" class="btn btn-info btn-block" value="Login"/>
+
+
+ </form>
+</div> 
+ <div class="col-md-3"> </div>
+ </div >
+
+</body>
+</html>
+
