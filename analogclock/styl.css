@@ -13,6 +13,8 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  color: grey;
+  background-color: #ffff;
 }
 .clock {
   height: 300px;
@@ -82,25 +84,25 @@ body {
 .clock .hand.second {
   width: 3px;
   height: 45%;
-  background-color: red;
+  background-color: Yellow;
 }
 
 .clock .hand.minute {
   width: 7px;
   height: 40%;
-  background-color: black;
+  background-color: green;
 }
 
 .clock .hand.hour {
   width: 10px;
   height: 35%;
-  background-color: black;
+  background-color: pink;
 }
 
 .clock::after {
   content: "";
   position: absolute;
-  background-color: black;
+  background-color: white;
   z-index: 10;
   width: 10px;
   height: 10px;
