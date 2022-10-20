@@ -19,7 +19,7 @@ export default function Main() {
       <div className="main">
         <img src={google} alt="googleImg" />
         <div className="searchArea">
-          <input type="text" className="searchInput" ref={input}onChange={(e)=> setGetQuery(e.target.value)}/>
+          {/* <input type="text" className="searchInput" ref={input}onChange={(e)=> setGetQuery(e.target.value)}/> */}
             <div className="icons">
             <img src={search} alt="" />
               <img src={mic} alt="" />
