@@ -118,7 +118,7 @@ Simple Calculator
                 <td><button class="num">7</button></td>
                 <td><button class="num">8</button></td>
                 <td><button class="num">9</button></td>
-                <td><button>X</button></td>
+                <td><button>*</button></td>
             </tr>
             <tr>
                 <td><button class="num">4</button></td>
@@ -134,7 +134,7 @@ Simple Calculator
             </tr>
             <tr>
                 <td><button class="num">0</button></td>
-                <td><button class="num">00</button></td>
+                <td><button id="clear">X</button></td>
                 <td><button>.</button></td>
                 <td><button id="equal">=</button></td>
             </tr>
@@ -152,7 +152,7 @@ for(item of buttons) {
 item.addEventListener('click',(e)=>{
 buttonText = e.target.innerText;
 console.log('Button text is ', buttonText);
-if(buttonText=='X'){
+if(buttonText=='*'){
     buttonText = '*';
     screenValue += buttonText;
     screen.value = screenValue;
@@ -163,11 +163,15 @@ else if(buttonText == 'AC'){
 }
 else if(buttonText=='='){
     screen.value = eval(screenValue);
-}else{
+}
+else{
     screenValue += buttonText;
     screen.value = screenValue;
 }
+
 })
 }
+
+
 </script>
 </html>
