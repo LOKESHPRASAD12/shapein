@@ -1,7 +1,4 @@
-/* Styling the Body element i.e. Color,
-
-        Font, Alignment */
-
+/* Styling the Body element i.e. Color, Font, Alignment */
 body {
 
 
@@ -13,6 +10,16 @@ body {
 
     color: #fff;
 
+    overflow: hidden;
+
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 2rem 0;
+
+
 }
 
 
@@ -20,13 +27,16 @@ body {
 
 form {
 
-        /* background-color: rgb(56, 0, 124); */
-        background: linear-gradient(1deg, #17164f 0%, #38376f 50%, #403f9c 100%);
-        max-width: 500px;
-        margin: 50px auto;
-        padding: 30px 20px;
-        box-shadow: 2px 5px 10px rgb(0 0 0 / 50%);
-        border-radius: 10px;
+    /* background-color: rgb(56, 0, 124); */
+    background: linear-gradient(1deg, #17164f 0%, #38376f 50%, #403f9c 100%);
+    max-width: 560px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgb(0 0 0 / 50%);
+    border-radius: 10px;
+    max-height: 70vh;
+    overflow: auto;
+    
 
 }
 
@@ -83,9 +93,7 @@ form {
     font-family: inherit;
     padding-top: 7px;
     padding-left: 11px;
-    margin: auto;
     display: block;
-    min-width: 100%;
     max-width: 100%;
     min-height: 150px;
 }
@@ -168,4 +176,27 @@ button:hover {
     transition: all 0.1s ease-in;
 
     cursor: pointer;
+}
+
+
+/* Styling the scrollbar of the form */
+
+#form::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #38376f;
+}
+
+#form::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #38376f;
+}
+
+#form::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #17164f;
 }
